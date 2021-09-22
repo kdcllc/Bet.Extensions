@@ -1,32 +1,31 @@
 // For format details, see https://aka.ms/vscode-remote/devcontainer.json or the definition README at
 // https://github.com/microsoft/vscode-dev-containers/tree/master/containers/dotnetcore-latest
 {
-	"name": "Bet.AspNetCore",
+	"name": "Bet.Extensions",
 	"dockerComposeFile": "../docker-compose.vscode.yml",
-	"service": "bet.aspnetcore.vscode",
-
-	"workspaceFolder": "/workspace/Bet.AspNetCore",
-    // "shutdownAction": "stopCompose",
-
+	"service": "bet.extensions.vscode",
+	"workspaceFolder": "/workspace/Bet.Extensions",
+	// "shutdownAction": "stopCompose",
 	"shutdownAction": "none",
-
-	"appPort": [9000,9001, 8001],
-
+	"appPort": [
+		9000,
+		9001,
+		8001
+	],
 	// "postCreateCommand": "dotnet restore",
-
 	"runArgs": [
 		// Uncomment the next line if you will use a ptrace-based debugger like C++, Go, and Rust.
 		// "--cap-add=SYS_PTRACE", "--security-opt", "seccomp=unconfined",
-
-		"--mount", "type=bind,source=/var/run/docker.sock,target=/var/run/docker.sock",
-		"--mount", "type=bind,source=${env:HOME}${env:USERPROFILE}/.kube,target=/root/.kube",
-
-		"-e", "SYNC_LOCALHOST_KUBECONFIG=true"
+		"--mount",
+		"type=bind,source=/var/run/docker.sock,target=/var/run/docker.sock",
+		"--mount",
+		"type=bind,source=${env:HOME}${env:USERPROFILE}/.kube,target=/root/.kube",
+		"-e",
+		"SYNC_LOCALHOST_KUBECONFIG=true"
 	],
-
 	"extensions": [
-        "ms-vscode.csharp",
-        "ms-vscode.azurecli",
+		"ms-vscode.csharp",
+		"ms-vscode.azurecli",
 		"ms-azuretools.vscode-docker",
 		"ms-kubernetes-tools.vscode-kubernetes-tools",
 		"eamodio.gitlens",
@@ -35,7 +34,6 @@
 		"davidanson.vscode-markdownlint",
 		"humao.rest-client",
 		"visualstudioexptteam.vscodeintellicode",
-
 		"jchannon.csharpextensions",
 		"EditorConfig.EditorConfig",
 		"ms-vscode-remote.vscode-remote-extensionpack",
@@ -43,7 +41,6 @@
 		"ms-vscode.vscode-node-azure-pack",
 		"marp-team.marp-vscode",
 	],
-
 	"settings": {
 		"remote.extensionKind": {
 			"ms-azuretools.vscode-docker": "workspace"

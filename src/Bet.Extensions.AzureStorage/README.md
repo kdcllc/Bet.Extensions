@@ -6,7 +6,7 @@
 
 > The second letter in the Hebrew alphabet is the ב bet/beit. Its meaning is "house". In the ancient pictographic Hebrew it was a symbol resembling a tent on a landscape.
 
-*Note: Pre-release packages are distributed via [feedz.io](https://f.feedz.io/kdcllc/bet-aspnetcore/nuget/index.json).*
+_Note: Pre-release packages are distributed via [feedz.io](https://f.feedz.io/kdcllc/bet-extensions/nuget/index.json)._
 
 ## Summary
 
@@ -30,7 +30,6 @@ If you like or are using this project to learn or start your solution, please gi
 ```csharp
     dotnet add package Bet.Extensions.AzureStorage
 ```
-
 
 ## Usage
 
@@ -80,8 +79,8 @@ By default the following roles are not assigned:
 ### AspNetCore StaticFilesOptions as Azure Storage Blob Container
 
 1. Make sure that default configuration exists for `CloudStorageAccount`.
-In the below configuration MSI authentication will be used to connect to the container.
-As you can see no need to provide secure SAS token.
+   In the below configuration MSI authentication will be used to connect to the container.
+   As you can see no need to provide secure SAS token.
 
 ```json
  "AzureStorage": {
@@ -98,7 +97,7 @@ As you can see no need to provide secure SAS token.
     {
     }
 
-````
+```
 
 3. Configure the Azure Blob Container
 

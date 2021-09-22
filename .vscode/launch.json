@@ -9,9 +9,9 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/src/Bet.AspNetCore.Sample/bin/Debug/netcoreapp3.1/Bet.AspNetCore.Sample.dll",
+            "program": "${workspaceFolder}/src/Bet.Hosting.Sample/bin/Debug/netcoreapp3.1/Bet.Extensions.Sample.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/src/Bet.AspNetCore.Sample/",
+            "cwd": "${workspaceFolder}/src/Bet.Hosting.Sample/",
             "console": "internalConsole",
             "stopAtEntry": false,
             "env": {
@@ -32,7 +32,6 @@
                 "searchNuGetOrgSymbolServer": true
             },
             "suppressJITOptimizations": true,
-
             "launchBrowser": {
                 "enabled": true,
                 "args": "${auto-detect-url}",

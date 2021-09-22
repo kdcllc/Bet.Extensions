@@ -5,7 +5,7 @@ using Microsoft.Extensions.Hosting;
 
 using Xunit;
 
-namespace Bet.AspNetCore.UnitTest
+namespace Bet.Extensions.UnitTest
 {
     public class AzureKeyVaultTests
     {

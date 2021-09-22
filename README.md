@@ -8,7 +8,7 @@
 
 > The second letter in the Hebrew alphabet is the ב bet/beit. Its meaning is "house". In the ancient pictographic Hebrew it was a symbol resembling a tent on a landscape.
 
-*Note: Pre-release packages are distributed via [feedz.io](https://f.feedz.io/kdcllc/bet-aspnetcore/nuget/index.json).*
+_Note: Pre-release packages are distributed via [feedz.io](https://f.feedz.io/kdcllc/bet-extensions/nuget/index.json)._
 
 This goal of this repo is to provide with a reusable functionality for developing Microservices with Docker and Kubernetes.
 These libraries extend `Microsoft.Extensions` and `Microsoft.AspNetCore` namespaces accordingly.
@@ -56,33 +56,22 @@ If you like or are using this project to learn or start your solution, please gi
 9. [`Bet.Extensions.DataProtection`](./src/Bet.Extensions.DataProtection/) - extends `DataProtection` to store encryption keys on Azure Storage Blob.
 10. [`Bet.AspNetCore.Jwt`](./src/Bet.AspNetCore.Jwt/) - Provides a simple and a quick way to get started with JWT authentication for your app.
 
-## AspNetCore specific functionality
-
-1. [`Bet.AspNetCore`](./src/Bet.AspNetCore/) specific functionality for web applications.
-2. [`Bet.AspNetCore.HealthChecks`](./src/Bet.Extensions.Hosting/) provides with HealthChecks for most common scenarios of the web application.
-3. [`Bet.AspNetCore.Logging`](./src/Bet.AspNetCore.Logging/) contains logging functionality for `AspNetCore` applications such as azure analyzer and AppInsight extends `Serilog`.
-4. [`Bet.AspNetCore.ReCapture`](./src/Bet.AspNetCore.ReCapture/) - a package for Google ReCapture.
-5. [`Bet.AspNetCore.LetsEncrypt`](./src/Bet.Extensions.Hosting/) - enables SSL inside of docker container i.e. hosted in Azure Containers.
-6. [`Bet.AspNetCore.Middleware`](./src/Bet.AspNetCore.Middleware/)
-7. [`Bet.AspNetCore.AzureStorage`](./src/Bet.AspNetCore.AzureStorage/) - extends `AspNetCore` and enables usage of Azure Blob Storage, Queues, Tables with MSI identity or token.
-
 ## Sample Applications
 
 All of the sample applications are deployable to local Kubernetes Cluster.
 
-1. [`Bet.AspNetCore.Sample`](./src/Bet.AspNetCore.Sample/) - `AspNetCore` Web App with spam and sentiment prediction models.
-2. [`Bet.Hosting.Sample`](./src/Bet.Hosting.Sample/) - DotNetCore Worker App that can run in Kubernetes as CronJob.
-
-## Domain Driven Development - `Clean Architecture`
-
-1. [Bet.CleanArchitecture.Core](./src/Bet.CleanArchitecture.Core/)
+1. [`Bet.Hosting.Sample`](./src/Bet.Hosting.Sample/) - DotNetCore Worker App that can run in Kubernetes as CronJob.
 
 ## About Docker Images
 
 This repo is utilizing [King David Consulting LLC Docker Images](https://hub.docker.com/u/kdcllc):
 
-- [kdcllc/dotnet-sdk:3.1](https://hub.docker.com/r/kdcllc/dotnet-sdk-vscode):  - the docker image for templated `DotNetCore` build of the sample web application.
+- [kdcllc/dotnet-sdk:3.1](https://hub.docker.com/r/kdcllc/dotnet-sdk-vscode): - the docker image for templated `DotNetCore` build of the sample web application.
 
 - [kdcllc/dotnet-sdk-vscode:3.1](https://hub.docker.com/r/kdcllc/dotnet-sdk/tags): the docker image for the Visual Studio Code In container development.
 
 - [Docker Github repo](https://github.com/kdcllc/docker/blob/master/dotnet/dotnet-docker.md)
+
+## References
+
+- [How to split git repo and keep history of multiple projects](https://mattdufeu.co.uk/blog/how-to-split-git-repo-while-keeping-history-of-multiple-projects/)

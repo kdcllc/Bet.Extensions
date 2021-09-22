@@ -5,7 +5,7 @@ using Bet.Extensions.Options;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-namespace Bet.AspNetCore.Options
+namespace Bet.Extensions.Options
 {
     /// <summary>
     /// Provides a place holder for validation and creation of Azure Vault.
