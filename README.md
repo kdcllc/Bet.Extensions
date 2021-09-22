@@ -1,17 +1,17 @@
-# Bet.AspNetCore Libraries
+# Bet.Extensions Libraries
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://raw.githubusercontent.com/kdcllc/Bet.AspNetCore/master/LICENSE)
-[![Build status](https://ci.appveyor.com/api/projects/status/fo9rakj7s7uhs3ij?svg=true)](https://ci.appveyor.com/project/kdcllc/bet-aspnetcore)
-[![NuGet](https://img.shields.io/nuget/v/Bet.AspNetCore.svg)](https://www.nuget.org/packages?q=Bet.AspNetCore)
-![Nuget](https://img.shields.io/nuget/dt/Bet.AspNetCore)
-[![feedz.io](https://img.shields.io/badge/endpoint.svg?url=https://f.feedz.io/kdcllc/bet-aspnetcore/shield/Bet.AspNetCore/latest)](https://f.feedz.io/kdcllc/bet-aspnetcore/packages/Bet.AspNetCore/latest/download)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://raw.githubusercontent.com/kdcllc/Bet.Extensions/master/LICENSE)
+[![Build status](https://ci.appveyor.com/api/projects/status/juk1eq7dy9l68mln?svg=true)](https://ci.appveyor.com/project/kdcllc/bet-extensions)
+[![NuGet](https://img.shields.io/nuget/v/Bet.Extensions.svg)](https://www.nuget.org/packages?q=Bet.Extensions)
+![Nuget](https://img.shields.io/nuget/dt/Bet.Extensions)
+[![feedz.io](https://img.shields.io/badge/endpoint.svg?url=https://f.feedz.io/kdcllc/bet-extensions/shield/Bet.Extensions/latest)](https://f.feedz.io/kdcllc/bet-extensions/packages/Bet.Extensions/latest/download)
 
 > The second letter in the Hebrew alphabet is the ב bet/beit. Its meaning is "house". In the ancient pictographic Hebrew it was a symbol resembling a tent on a landscape.
 
 _Note: Pre-release packages are distributed via [feedz.io](https://f.feedz.io/kdcllc/bet-extensions/nuget/index.json)._
 
 This goal of this repo is to provide with a reusable functionality for developing Microservices with Docker and Kubernetes.
-These libraries extend `Microsoft.Extensions` and `Microsoft.AspNetCore` namespaces accordingly.
+These libraries extend `Microsoft.Extensions` and `Microsoft.Extensions` namespaces accordingly.
 
 ## Hire me
 
@@ -54,7 +54,7 @@ If you like or are using this project to learn or start your solution, please gi
 7. [`Bet.Extensions.HealthChecks`](./src/Bet.Extensions.HealthChecks/) - extends useful HealChecks for Kubernetes, including `Worker` tcp based healthchecks.
 8. [`Bet.Extensions.HealthChecks.AzureStorage`](./src/Bet.Extensions.HealthChecks.AzureStorage/) - provides with HealthChecks Azure Storage
 9. [`Bet.Extensions.DataProtection`](./src/Bet.Extensions.DataProtection/) - extends `DataProtection` to store encryption keys on Azure Storage Blob.
-10. [`Bet.AspNetCore.Jwt`](./src/Bet.AspNetCore.Jwt/) - Provides a simple and a quick way to get started with JWT authentication for your app.
+10. [`Bet.Extensions.Jwt`](./src/Bet.Extensions.Jwt/) - Provides a simple and a quick way to get started with JWT authentication for your app.
 
 ## Sample Applications
 
