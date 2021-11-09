@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <NetCoreVersion>3.1.19</NetCoreVersion>
+    <NetCoreVersion>3.1.21</NetCoreVersion>
     <MLCommon>1.6.0</MLCommon>
     <SwashbuckleCommon>6.1.4</SwashbuckleCommon>
     <MicrosoftAzureStorageCommon>11.2.3</MicrosoftAzureStorageCommon>
@@ -19,8 +19,13 @@
     <ThreadinCommon>$(NetCoreVersion)</ThreadinCommon>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net6.0'">
+    <NetCoreVersion>6.0.*</NetCoreVersion>
+    <ThreadinCommon>$(NetCoreVersion)</ThreadinCommon>
+  </PropertyGroup>
+
   <ItemGroup Label="ApplicationInsights">
-    <PackageReference Update="Microsoft.ApplicationInsights.WorkerService" Version="2.18.0" />
+    <PackageReference Update="Microsoft.ApplicationInsights.WorkerService" Version="2.19.0" />
     <PackageReference Update="Microsoft.ApplicationInsights.AspNetCore" Version="2.17.0" />
   </ItemGroup>
 
@@ -83,7 +88,7 @@
   </ItemGroup>
 
   <ItemGroup Label="Microsoft.Azure.KeyVault">
-    <PackageReference Update="Microsoft.Azure.Services.AppAuthentication" Version="1.6.1" />
+    <PackageReference Update="Microsoft.Azure.Services.AppAuthentication" Version="1.6.2" />
     <PackageReference Update="Microsoft.Azure.KeyVault" Version="3.0.5" />
     <PackageReference Update="Microsoft.Azure.KeyVault.Core" Version="3.0.5" />
   </ItemGroup>
@@ -99,17 +104,17 @@
     <PackageReference Update="Microsoft.Azure.Management.AppService.Fluent" Version="$(MicrosoftAzureManagementCommon)" />
     <PackageReference Update="Microsoft.Azure.Management.Dns.Fluent" Version="$(MicrosoftAzureManagementCommon)" />
     <PackageReference Update="Microsoft.Azure.Management.Fluent" Version="$(MicrosoftAzureManagementCommon)" />
-    <PackageReference Update="Microsoft.Identity.Client" Version="4.36.1" />
+    <PackageReference Update="Microsoft.Identity.Client" Version="4.37.0" />
   </ItemGroup>
 
   <ItemGroup Label="Microsoft.FeatureManagement">
-    <PackageReference Update="Azure.Identity" Version="1.4.1" />
-    <PackageReference Update="Microsoft.Extensions.Configuration.AzureAppConfiguration" Version="4.5.0" />
+    <PackageReference Update="Azure.Identity" Version="1.5.0" />
+    <PackageReference Update="Microsoft.Extensions.Configuration.AzureAppConfiguration" Version="4.5.1" />
     <PackageReference Update="Microsoft.FeatureManagement" Version="2.0.0" />
   </ItemGroup>
 
   <ItemGroup Label="Unit Tests">
-    <PackageReference Update="Microsoft.NET.Test.Sdk" Version="16.11.0" />
+    <PackageReference Update="Microsoft.NET.Test.Sdk" Version="17.0.0" />
     <PackageReference Update="Moq" Version="4.16.1" />
     <PackageReference Update="xunit" Version="2.4.1" />
     <PackageReference Update="xunit.runner.visualstudio" Version="2.4.3" />
@@ -119,9 +124,9 @@
   <ItemGroup Label="Serilog">
     <PackageReference Update="Serilog" Version="2.10.0" />
     <PackageReference Update="Serilog.AspNetCore" Version="4.1.0" />
-    <PackageReference Update="Serilog.Extensions.Hosting" Version="4.1.2" />
-    <PackageReference Update="Serilog.Extensions.Logging" Version="3.0.1" />
-    <PackageReference Update="Serilog.Settings.Configuration" Version="3.2.0" />
+    <PackageReference Update="Serilog.Extensions.Hosting" Version="4.2.0" />
+    <PackageReference Update="Serilog.Extensions.Logging" Version="3.1.0" />
+    <PackageReference Update="Serilog.Settings.Configuration" Version="3.3.0" />
     <PackageReference Update="Serilog.Sinks.ApplicationInsights" Version="3.1.0" />
     <PackageReference Update="Serilog.Sinks.AzureAnalytics" Version="4.7.0" />
     <PackageReference Update="Serilog.Sinks.Console" Version="4.0.0" />
@@ -135,7 +140,7 @@
   </ItemGroup>
 
   <ItemGroup Label="Shared">
-    <PackageReference Update="Certes" Version="3.0.0" />
+    <PackageReference Update="Certes" Version="3.0.3" />
     <PackageReference Update="DnsClient" Version="1.5.0" />
 
     <PackageReference Update="Colorful.Console" Version="1.2.10" />
@@ -167,7 +172,7 @@
   </ItemGroup>
 
   <ItemGroup Label="Analyzers">
-    <PackageReference Include="Bet.CodeAnalyzers" Version="1.0.10" PrivateAssets="All" />
+    <PackageReference Include="Bet.CodeAnalyzers" Version="1.0.12" PrivateAssets="All" />
   </ItemGroup>
 
   <ItemGroup>
